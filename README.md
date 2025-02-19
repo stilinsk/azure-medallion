@@ -50,3 +50,10 @@ try:
 except Exception as e:
     print(f"Directory {fileName} does not exist in the specified path. Error: {e}")
 ```
+
+```
+@concat(item().table_schema,'.',item().table_name,'.parquet')
+```
+```
+@formatDateTime(utcNow(),'yyyyMMdd')
+```
